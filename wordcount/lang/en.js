@@ -12,5 +12,6 @@ CKEDITOR.plugins.setLang('wordcount', 'en', {
     Paragraphs: 'Paragraphs:',
     pasteWarning: 'Content cannot be pasted because it is above the allowed limit',
     Selected: 'Selected: ',
-    title: 'Statistics'
+    title: 'Statistics',
+    contentSize: 'Content size : '
 });
