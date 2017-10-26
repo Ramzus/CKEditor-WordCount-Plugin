@@ -74,6 +74,13 @@ config.wordcount = {
     // How long to show the 'paste' warning, 0 is default for not auto-closing the notification
     pasteWarningDuration: 0,
     
+    //Show content size of date in editor content window
+    showContentSize : true,
+    
+    //Specify size limit for window content, in order to notify user if his data exceed the limit
+    //size in Mo
+    maxContentSize: 2,
+    
 
     // Add filter to add or remove element before counting (see CKEDITOR.htmlParser.filter), Default value : null (no filter)
     filter: new CKEDITOR.htmlParser.filter({
