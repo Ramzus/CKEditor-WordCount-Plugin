@@ -283,7 +283,9 @@ CKEDITOR.plugins.add("wordcount", {
       editorInstance.config.Locked = 0;
       snapShot = editor.getSnapshot();
 
-      counterElement(editorInstance).className = "cke_path_item";
+      if (counterElement(editorInstance)) {
+        counterElement(editorInstance).className = "cke_path_item";
+      }
     }
 
     function updateCounter(editorInstance) {
@@ -349,7 +351,7 @@ CKEDITOR.plugins.add("wordcount", {
 
       if (CKEDITOR.env.gecko) {
         counterElement(editorInstance).innerHTML = html;
-      } else {
+      } else if (counterElement(editorInstance)) {
         counterElement(editorInstance).innerText = html;
       }
 
